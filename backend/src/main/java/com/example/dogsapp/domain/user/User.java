@@ -48,7 +48,7 @@ public class User implements UserDetails {
   private String street;
 
   @Column(name = "street_number")
-  private int streetNumber;
+  private String streetNumber;
 
   @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
   @JsonIgnore

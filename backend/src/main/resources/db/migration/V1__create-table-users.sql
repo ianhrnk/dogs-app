@@ -7,5 +7,5 @@ CREATE TABLE users (
     city VARCHAR(255),
     state VARCHAR(255),
     street VARCHAR(255),
-    street_number INTEGER
+    street_number VARCHAR(255)
 );
