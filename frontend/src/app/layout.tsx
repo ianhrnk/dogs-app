@@ -29,12 +29,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'min-h-screen font-sans antialiased',
+          'font-sans antialiased',
           fontSerif.variable,
           fontSans.variable
         )}
       >
-        {children}
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   )

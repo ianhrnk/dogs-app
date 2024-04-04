@@ -1,7 +1,13 @@
+'use client'
+
+import RegisterForm from '@/components/RegisterForm'
+
 export default function Home() {
   return (
-    <h1 className="scroll-m-20 font-serif text-4xl font-bold tracking-tight lg:text-5xl">
-      Hello World!
-    </h1>
+    <section className="flex min-h-screen items-center justify-center">
+      <div className="max-w-[400px]">
+        <RegisterForm />
+      </div>
+    </section>
   )
 }
