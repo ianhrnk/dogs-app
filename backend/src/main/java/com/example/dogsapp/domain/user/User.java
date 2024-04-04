@@ -58,10 +58,16 @@ public class User implements UserDetails {
     this.id = id;
   }
 
-  public User(String email, String password, UserRole role) {
+  public User(String email, String password, UserRole role, String cep, String city, String state,
+      String street, String streetNumber) {
     this.email = email;
     this.password = password;
     this.role = role;
+    this.cep = cep;
+    this.city = city;
+    this.state = state;
+    this.street = street;
+    this.streetNumber = streetNumber;
   }
 
   @Override
@@ -97,4 +103,5 @@ public class User implements UserDetails {
   public boolean isEnabled() {
     return true;
   }
+
 }
